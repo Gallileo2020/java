@@ -1,0 +1,16 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class shouhizei {
+    public static void main(String[] args){
+        Scanner stdIn = new Scanner(System.in);
+  
+        System.out.print("税別：");  int x = stdIn.nextInt();  //税別の値段を入力
+        double price = Math.floor(x * 1.1);                      //税込の計算、小数点を切り捨てている
+  
+        System.out.println("消費税率が10％");
+        System.out.println("税込：" + price + "です");
+  
+        stdIn.close(); 
+    }
+}
